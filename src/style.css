@@ -1,0 +1,133 @@
+body {
+  text-align: center;
+}
+
+.errorDiv {
+  color: red;
+  font-size: larger;
+}
+
+.starForm {
+  border-color: black;
+  border-style: solid;
+
+  border-radius: 32px;
+  border-width: 4px;
+  padding: 2vw;
+  margin: 2vw auto;
+}
+
+.starForm h1 {
+  font-family: fantasy;
+}
+
+.starForm form {
+  margin: 1vw auto;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.starForm form div {
+  margin: 7px;
+  font-family: monospace;
+  font-size: xx-large;
+}
+.starForm form div label input {
+  font-size: large;
+}
+.starForm form button {
+  margin: 7px;
+  font-family: monospace;
+  font-size: xx-large;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.gameContainer {
+  border: solid 2px black;
+}
+
+.cardContainer {
+  background-color: aquamarine;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 50px;
+}
+
+.cardTitle {
+  font-size: xx-large;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+  margin: 5px;
+  align-items: center;
+}
+
+.cardInfo div {
+  padding: 10px;
+  font-size: larger;
+  border-bottom: 2px dashed black;
+  width: 30vw;
+  text-align: center;
+}
+
+.cardClickable div {
+  transition: font-size 2s;
+}
+
+.cardClickable div:hover {
+  cursor: pointer;
+  font-size: xx-large;
+}
+
+.model {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.modelDiv {
+  margin: auto;
+  margin-top: 30vh;
+  padding: 1rem;
+  text-align: center;
+  opacity: 0;
+  animation: opacityOn 5s normal forwards;
+  width: 200px;
+  color: white;
+
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@keyframes opacityOn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.gameInfo {
+  margin: 60px;
+}
+
+.gameInfo h2 {
+  font-size: xxx-large;
+}
+
+.gameInfo h3 {
+  font-size: xx-large;
+}
+.gameInfo p {
+  font-size: x-large;
+}
